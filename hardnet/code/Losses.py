@@ -79,6 +79,7 @@ def loss_L2Net(anchor, positive, anchor_swap = False,  margin = 1.0, loss_type =
             loss += -torch.log( exp_pos / exp_den1 )
     else: 
         print ('Only softmax loss works with L2Net sampling')
+        print ('Only softmax loss works with L2Net sampling')
         sys.exit(1)
     loss = torch.mean(loss)
     return loss
